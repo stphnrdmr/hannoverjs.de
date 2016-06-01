@@ -1,96 +1,27 @@
-<!doctype html>
-<html ng-app="hannoverjs">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="HannoverJS is a usergroup focused on JavaScript and related topcis. The idea has gained great interest around Lower-Saxony's JavaScript folks. We meet regularly on the 4th Thursday of every month at 7pm at NewStore, Bödekerstraße 56 in Hannover.">
+    <meta name="subject" content="Hannover's monthly JavaScript Meetup">
+    <meta name="url" content="http://hannoverjs.de/">
+    <title>HannoverJS – Hannover's monthly JavaScript Meetup</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root" />
+    <script src="bundle.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    <head>
-        <meta charset="utf-8">
-        <title>Hannover.js - Hannover's regulary JavaScript Meetup</title>
-        <meta name="description" content="Hannover.js is a usergroup focused on JavaScript and related
-        stuff. The idea has gained great interest around lower saxonys JavaScript folks. We meet regularly
-        on the 4th thursday every month at 7pm. at the EDELSTALL (Coworking Space), Capitol Hochhaus, Schwarzer Bär 2, 30449 in Hannover.">
-        <meta name="keywords" content="JavaScript, Meetup, Usergroup, Hannover, Development">
-        <meta name="author" content="Hannover.js">
-        <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+      ga('create', 'UA-78642247-1', 'auto');
+      ga('send', 'pageview');
 
-        <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-        <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-
-    </head>
-    <body>
-        <div id="wrap">
-            <header>
-                <img alt="HannoverJS Logo" src="https://github.com/HannoverJS/hannoverjs-logo/blob/master/logo/hannover-js.png?raw=true" width="150" height="150" class="logo"/>
-                <nav>
-                    <ul>
-                        <li><a href="#/home">Home</a></li>
-                        <li><a href="#/talks">Talks</a></li>
-                        <li><a href="#/about">About</a></li>
-                        <li><a href="#/speakers">Speakers</a></li>
-                        <li><a href="#/contact">Contact</a></li>
-                    </ul>
-                    </nav>
-                <div class="social-bookmarks">
-                    <a href="http://facebook.com/hannoverjs"><img alt="Facebook Button" src="images/icons/social-bookmarks/facebook.png"/></a>
-                    <a href="http://twitter.com/#!/hannoverjs"><img alt="Twitter Button" src="images/icons/social-bookmarks/twitter.png"/></a>
-                </div>
-
-                <div class="sponsors">
-                    <h3>Sponsors</h3>
-
-                    <a href="http://newstore.com"><img src="http://cdn2.hubspot.net/hub/506011/hubfs/newstore_logo_primary_01c.png?t=1448470097413&width=240" align="right" alt="NewStore Logo" width="120"></a>
-                </div>
-
-                <div class="jsdocs">
-                    <a href="https://developer.mozilla.org/en/JavaScript"><img alt="Promote JS banner" src="http://static.jsconf.us/promotejsv.gif" width="100" align="right"/></a>
-                </div>
-            </header>
-
-            <section class="content" ng-view>
-
-            </section>
-
-            <footer>
-                <section class="socialize">
-
-                    <h1>Sozialize</h1>
-
-                    <ul>
-                        <li><span>Hannover.js on <a href="http://www.twitter.com/#!/hannoverjs/">Twitter</a></span></li>
-                        <li><span>Hannover.js on <a href="http://www.facebook.com/hannoverjs">Facebook</a></span></li>
-                        <li><span>Hannover.js on <a href="http://slack.hannoverjs.de">Slack</a></span></li>
-                    </ul>
-                </section>
-                <section class="get-in-touch">
-
-                    <h1>Get in touch</h1>
-
-                    <ul>
-                        <li>
-                            <a href="http://www.twitter.com/cburgdorf">Christoph Burgdorf</a> <span class="founder">(Founder)</span>
-                        </li>
-                        <li><a href="http://www.twitter.com/PascalPrecht">Pascal Precht</a></li>
-                        <li><a href="http://www.twitter.com/RobinThrift">Robin Thrift</a></li>
-                        <li><a href="http://www.twitter.com/JanPantel">Jan-Oliver Pantel</a></li>
-                        <li><a href="http://www.twitter.com/timche_">Tim Cheung</a></li>
-                    </ul>
-                </section>
-                <section class="location">
-
-                    <h1>Location</h1>
-
-                    <ul>
-                        <li><a href="http://www.newstore.com/">NewStore</a></li>
-                    </ul>
-                </section>
-                <p class="copyright">Copyright &copy; Hannover.js - Hannover's regulary JavaScript Meetup 2011 - 2016 </p>
-            </footer>
-        </div>
-
-        <script src="js/moment.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
-        <script src="js/app.js"></script>
-    </body>
+    </script>
+  </body>
 </html>
